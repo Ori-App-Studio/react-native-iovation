@@ -18,5 +18,5 @@ const Iovation = NativeModules.Iovation
     );
 
 export function getBlackbox(): Promise<string> {
-  return Iovation.getBlackbox();
+  return Iovation.getBlackbox(1, 2);
 }
