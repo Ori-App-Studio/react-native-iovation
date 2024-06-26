@@ -19,10 +19,10 @@ class IovationModule(reactContext: ReactApplicationContext) :
     promise.resolve(a * b)
   }
 
-  val configuration = FraudForceConfiguration.Builder()
-	  .subscriberKey("M1WrRSwcjUBQmHamij3DxQJWr00YzfRhXaMkI+zhhiY=")
-		.enableNetworkCalls(true)
-		.build()
+  // val configuration = FraudForceConfiguration.Builder()
+	 //  .subscriberKey("M1WrRSwcjUBQmHamij3DxQJWr00YzfRhXaMkI+zhhiY=")
+		// .enableNetworkCalls(true)
+		// .build()
 
   val context = reactContext.getApplicationContext()
 
