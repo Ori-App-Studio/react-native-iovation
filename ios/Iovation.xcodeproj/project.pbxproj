@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,8 @@
 		AC6ECC762C230F300000396C /* IovationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC752C230F300000396C /* IovationTests.swift */; };
 		AC6ECC802C230F300000396C /* IovationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC7F2C230F300000396C /* IovationUITests.swift */; };
 		AC6ECC822C230F300000396C /* IovationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */; };
-		DDD79EDF2C5792D300E150C4 /* FraudForce.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */; };
-		DDD79EE02C5792D300E150C4 /* FraudForce.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDD79EE22C5797EE00E150C4 /* FraudForce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD79EE12C5797EE00E150C4 /* FraudForce.framework */; };
+		DDD79EE32C5797EE00E150C4 /* FraudForce.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD79EE12C5797EE00E150C4 /* FraudForce.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AC67D8CA2C23107C00EDBEC1 /* Embed Frameworks */ = {
+		DDD79EE42C5797EE00E150C4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DDD79EE02C5792D300E150C4 /* FraudForce.xcframework in Embed Frameworks */,
+				DDD79EE32C5797EE00E150C4 /* FraudForce.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +61,7 @@
 		AC6ECC7B2C230F300000396C /* IovationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IovationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6ECC7F2C230F300000396C /* IovationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationUITests.swift; sourceTree = "<group>"; };
 		AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:WY8P975J56:iovation Inc."; lastKnownFileType = wrapper.xcframework; name = FraudForce.xcframework; path = "../../../Downloads/deviceprint-SDK-iOS-5.6.0/FraudForce.xcframework"; sourceTree = "<group>"; };
+		DDD79EE12C5797EE00E150C4 /* FraudForce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FraudForce.framework; path = Frameworks/FraudForce.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD79EDF2C5792D300E150C4 /* FraudForce.xcframework in Frameworks */,
+				DDD79EE22C5797EE00E150C4 /* FraudForce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,7 @@
 		AC67D8C62C23107C00EDBEC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */,
+				DDD79EE12C5797EE00E150C4 /* FraudForce.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 				AC6ECC5C2C230F2F0000396C /* Sources */,
 				AC6ECC5D2C230F2F0000396C /* Frameworks */,
 				AC6ECC5E2C230F2F0000396C /* Resources */,
-				AC67D8CA2C23107C00EDBEC1 /* Embed Frameworks */,
+				DDD79EE42C5797EE00E150C4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -454,6 +454,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Iovation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,6 +487,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Iovation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
