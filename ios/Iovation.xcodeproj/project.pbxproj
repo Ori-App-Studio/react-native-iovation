@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC67D8C82C23107C00EDBEC1 /* FraudForce.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */; };
-		AC67D8C92C23107C00EDBEC1 /* FraudForce.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC6ECC642C230F2F0000396C /* IovationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC632C230F2F0000396C /* IovationApp.swift */; };
 		AC6ECC662C230F2F0000396C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC652C230F2F0000396C /* ContentView.swift */; };
 		AC6ECC682C230F300000396C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6ECC672C230F300000396C /* Assets.xcassets */; };
@@ -16,6 +14,8 @@
 		AC6ECC762C230F300000396C /* IovationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC752C230F300000396C /* IovationTests.swift */; };
 		AC6ECC802C230F300000396C /* IovationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC7F2C230F300000396C /* IovationUITests.swift */; };
 		AC6ECC822C230F300000396C /* IovationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */; };
+		DDD79EDF2C5792D300E150C4 /* FraudForce.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */; };
+		DDD79EE02C5792D300E150C4 /* FraudForce.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC67D8C92C23107C00EDBEC1 /* FraudForce.xcframework in Embed Frameworks */,
+				DDD79EE02C5792D300E150C4 /* FraudForce.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +50,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:WY8P975J56:iovation Inc."; lastKnownFileType = wrapper.xcframework; path = FraudForce.xcframework; sourceTree = "<group>"; };
 		AC6ECC602C230F2F0000396C /* Iovation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iovation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6ECC632C230F2F0000396C /* IovationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationApp.swift; sourceTree = "<group>"; };
 		AC6ECC652C230F2F0000396C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		AC6ECC7B2C230F300000396C /* IovationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IovationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6ECC7F2C230F300000396C /* IovationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationUITests.swift; sourceTree = "<group>"; };
 		AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:WY8P975J56:iovation Inc."; lastKnownFileType = wrapper.xcframework; name = FraudForce.xcframework; path = "../../../Downloads/deviceprint-SDK-iOS-5.6.0/FraudForce.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC67D8C82C23107C00EDBEC1 /* FraudForce.xcframework in Frameworks */,
+				DDD79EDF2C5792D300E150C4 /* FraudForce.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,7 @@
 		AC67D8C62C23107C00EDBEC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */,
+				DDD79EDE2C5792D300E150C4 /* FraudForce.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
