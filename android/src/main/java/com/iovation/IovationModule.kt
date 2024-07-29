@@ -32,7 +32,6 @@ class IovationModule(reactContext: ReactApplicationContext) :
 	}
 
   @ReactMethod
-  fun getBlackbox(a: Double, b:Double, promise: Promise) {
   fun getBlackbox(promise: Promise) {
     FraudForceManager.refresh(context)
     val blackbox = FraudForceManager.getBlackbox(context)

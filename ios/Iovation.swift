@@ -9,7 +9,7 @@ class Iovation: NSObject {
   }
 
   @objc(getBlackbox:withB:withResolver:withRejecter:)
-  func getBlackbox(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
+  func getBlackbox(resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
     let blackbox = FraudForce.blackbox()
     resolve(blackbox);
   }
