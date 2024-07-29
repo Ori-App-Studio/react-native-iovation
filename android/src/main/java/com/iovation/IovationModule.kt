@@ -19,12 +19,13 @@ class IovationModule(reactContext: ReactApplicationContext) :
     promise.resolve(a * b)
   }
 
+  val context = reactContext.getApplicationContext()
+  val ai = context.packageManager.getApplicationInfo(context.packageName, PackageManager.GET_META_DATA)
+  val iovationKey = ai.metaData.getString("com.iovation.IOVATION_KEY") ?: ""
   val configuration = FraudForceConfiguration.Builder()
-	  .subscriberKey("M1WrRSwcjUBQmHamij3DxQJWr00YzfRhXaMkI+zhhiY=")
+	  .subscriberKey(iovationKey)
 		.enableNetworkCalls(true)
 		.build()
-
-  val context = reactContext.getApplicationContext()
 
 	init {
 	  FraudForceManager.initialize(configuration, context)
