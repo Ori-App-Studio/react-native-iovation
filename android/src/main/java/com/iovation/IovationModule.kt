@@ -29,11 +29,12 @@ class IovationModule(reactContext: ReactApplicationContext) :
 
 	init {
 	  FraudForceManager.initialize(configuration, context)
-    FraudForceManager.refresh(context)
 	}
 
   @ReactMethod
   fun getBlackbox(a: Double, b:Double, promise: Promise) {
+  fun getBlackbox(promise: Promise) {
+    FraudForceManager.refresh(context)
     val blackbox = FraudForceManager.getBlackbox(context)
     promise.resolve(blackbox)
   }
